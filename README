@@ -1,0 +1,2 @@
+client.js is an implementation where each event has a trigger (webhook) attached to it.
+client2.js is an implementation where we register different handlers (add, remove, update) and add event to handler based on event type. 
