@@ -94,7 +94,6 @@ function Updated(event) {
 // Instantiate DB event listener and register all the handlers. 
 
 const dbEventListener = new DBEventListener
-console.log("listen", dbEventListener)
 
 dbEventListener.register('add', Added)
 dbEventListener.register('remove', Removed)
