@@ -75,12 +75,10 @@ DBEventListener.prototype = {
 // Handlers (basically webhooks to Slack, Email, SMS, etc)
 
 function Added(event) {
-    // TODO: Move the Try Catch down to Webhook trigger level and add to RetryQueue. 
     console.log("added record", event.record)
 }
 
 function Removed(event) {
-    // TODO: Move the Try Catch down to Webhook trigger level and add to RetryQueue. 
     if (event.error) {
         throw "ERROR: SBF broke this"
     }
@@ -89,7 +87,6 @@ function Removed(event) {
 }
 
 function Updated(event) {
-    // TODO: Move the Try Catch down to Webhook trigger level and add to RetryQueue. 
     console.log("updated record", event.record)
 }
 
